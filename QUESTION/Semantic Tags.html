@@ -1,0 +1,254 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My College Website</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f4fa;
+            color: #10244d;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(110deg, #354a9c, #617bd2);
+            color: white;
+            padding: 30px 40px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .logo {
+            font-size: 55px;
+            border-right: 3px solid white;
+            padding-right: 25px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0 0 12px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav {
+            background: #252f40;
+            text-align: center;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 17px;
+            margin: 0 22px;
+        }
+
+        nav a:hover {
+            color: #b8caff;
+        }
+
+        /* Main Layout */
+        .container {
+            display: flex;
+            gap: 22px;
+            padding: 28px 22px;
+        }
+
+        main {
+            width: 68%;
+            background: white;
+            padding: 25px;
+            border: 1px solid #dce3f0;
+            border-radius: 10px;
+        }
+
+        main h2 {
+            font-size: 30px;
+            margin-top: 8px;
+        }
+
+        main p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* Vision Card */
+        .vision {
+            background: #f0efff;
+            padding: 18px 25px;
+            border-radius: 9px;
+            margin-top: 25px;
+        }
+
+        .vision h2 {
+            font-size: 25px;
+        }
+
+        /* Courses Card */
+        .courses {
+            background: #eaf8f3;
+            padding: 18px 25px;
+            border-radius: 9px;
+            margin-top: 22px;
+        }
+
+        .courses h2 {
+            font-size: 25px;
+        }
+
+        .courses li {
+            font-size: 18px;
+            margin: 12px 0;
+        }
+
+        /* Aside */
+        aside {
+            width: 32%;
+            background: #e2efff;
+            border: 1px solid #c3dcff;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        aside h2 {
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+
+        aside p {
+            font-size: 18px;
+            padding: 20px 0;
+            border-bottom: 1px solid #bfd5f1;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(110deg, #354a9c, #526bc0);
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            font-size: 17px;
+            margin: 12px;
+        }
+
+        /* Mobile Screen */
+        @media (max-width: 700px) {
+            header {
+                padding: 22px 15px;
+                gap: 12px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            header p {
+                font-size: 15px;
+            }
+
+            .logo {
+                font-size: 35px;
+                padding-right: 12px;
+            }
+
+            nav a {
+                margin: 6px;
+                font-size: 14px;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            main, aside {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🎓</div>
+        <div>
+            <h1>Welcome to My College</h1>
+            <p>Learn Today, Lead Tomorrow</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <main id="home">
+
+            <section id="about">
+                <h2>About My College</h2>
+                <p>
+                    My college helps students gain knowledge and
+                    develop new skills. We learn different subjects
+                    and prepare ourselves for a better future.
+                </p>
+            </section>
+
+            <section class="vision">
+                <h2>🎯 Our Vision</h2>
+                <p>
+                    Our aim is to provide quality education and help
+                    students achieve their goals.
+                </p>
+            </section>
+
+            <section class="courses" id="courses">
+                <h2>📖 Our Courses</h2>
+                <ul>
+                    <li>BCA</li>
+                    <li>BBA</li>
+                    <li>MCA</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <aside>
+            <h2>📢 Quick Information</h2>
+            <p>👥 College Activities</p>
+            <p>📅 Upcoming Events</p>
+            <p>📋 Student Notices</p>
+        </aside>
+
+    </div>
+
+    <footer id="contact">
+        <p>✉ Contact: mycollege@example.com</p>
+        <p>© 2026 My College. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

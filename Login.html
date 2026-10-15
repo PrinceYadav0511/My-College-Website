@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+       
+        username:<input type="text" id="user">
+        <br><br>
+
+        password:<input type="password" id="pass">
+        <br><br>
+
+        <button type="button" onclick="login()">login</button>
+
+        <p id="result"></p>
+
+         <button onclick="show()">click me </button>
+
+         <p id="name"></p>
+
+
+
+
+        <script>
+
+            function login()
+            {
+
+                let u = document.getElemeyId("user").value;
+
+                let p = document.getElementById("pass").value;
+
+                if(u=="admin" && p=="1234")
+
+                {
+                      document.getElementById("result").innerHTML="login Successfully";
+                }
+            
+
+               else
+               {
+                document.getElementsByClassName("result").innerHTML="Invalid user_name & password";
+               }
+              
+             }
+
+             function show()
+             {
+                document.getElementById("name").innerHTML="Welcome to javascript";
+             }
+
+
+        </script>
+    
+   
+    
+</body>
+</html>

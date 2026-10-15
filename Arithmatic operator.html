@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background-color: lightblue;
+        }
+
+        h1{
+            text-align: center;
+            color: darkblue;
+            text-decoration: underline;
+            
+        }
+
+        form{
+            width: 350px;
+            height: 350px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input{
+            width: 100px;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .botton{
+            width: 100px;
+            padding: 10px;
+            background-color: rgb(121, 220, 29);
+            color: red ;
+           
+        }
+
+        p{
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <h1> Check Your Result Status</h1>
+
+    <form>
+
+        English<input type="text" id="n1">
+        Hindi<input type="text" id="n2">
+        Math<input type="text" id="n3">
+        Science<input type="text" id="n4">
+        Computer<input type="text" id="n5">
+
+        <button type="button" onclick="check()">Result Status</button>
+        <p id="data"></p>
+        <p id="data1"></p>
+          
+    </form>
+
+    <script>
+
+        function check(){
+            var a = parseInt(document.getElementById("n1").value);
+            var b = parseInt(document.getElementById("n2").value);
+            var c = parseInt(document.getElementById("n3").value);
+            var d = parseInt(document.getElementById("n4").value);
+            var e = parseInt(document.getElementById("n5").value);
+
+            var total = a+b+c+d+e;
+            var per =(total*100/500);
+
+            // for other page.  
+            // document.write("Total marks =" + total + "<br>")
+            // document.write(" Percentage =" + per + "<br>")
+
+            // for same page.
+            document.getElementById("data").innerHTML = "Total Marks =" + total;
+            document.getElementById("data1").innerHTML = "Percentage =" + per;
+
+    
+        }
+    </script>
+    
+</body>
+</html>
