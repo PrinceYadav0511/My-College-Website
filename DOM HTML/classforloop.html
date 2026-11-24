@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="highlight"> First Paragraph</p>
+    <p class="highlight"> Second Paragraph</p>
+    <p class="highlight"> Third Paragraph</p>
+    <p class="highlight"> Four Paragraph</p>
+    <p class="normal"> Five Paragraph</p>
+    <button onclick="Highlight()">Highlight</button>
+
+    <script>
+
+        function Highlight(){
+   
+        const items = document.getElementsByClassName("highlight");
+        
+
+         //using a standard for loop//
+        for(let i = 0; i<items.length; i++)
+    {
+        items[i].style.fontWeight = "bold";
+        items[i].style.color = "blue";
+        items[i].style.backgroundColor = "yellow";
+    }
+}
+
+    //access the first match
+
+    
+    //  const highlight = document.ElementsByClassName("normal"); 
+    //  for (let i = 0; i<items.lenght; i++)
+    //  console.log(highlights[0].textContent);
+    //  highlight[0].style.fontSize = "red";
+    </script>
+    
+</body>
+</html>
