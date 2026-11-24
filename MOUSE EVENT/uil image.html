@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function big(x)
+        {
+            x.style.width="400px";
+            x.style.height="700px";
+        }
+
+        function small(x)
+        {
+            x.style.width="30px";
+            x.style.height="40px";
+            x.style.filter="grayscale(100%)";
+        }
+    </script>
+
+    <img src="house.jpg" onmouseover="big(this)" onmouseout="small(this)">
+    
+</body>
+</html>
